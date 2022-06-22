@@ -1,0 +1,112 @@
+body {
+    font-family: "PT Sans Regular", "Arial", sans-serif;
+margin: 0;
+padding: 0;
+font-size: 14px;
+line-height: 21px;
+font-weight: 400;
+color: @text;
+text-transform: uppercase;
+background-color: @white;
+}
+.page_body {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-left: auto;
+  padding-right: auto;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: @black;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.hidden {
+  display: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button {
+  padding: 15px 32px 17px 32px;
+  background-color: @blue;
+  a {
+     font-family: "PT Sans Bold", "Arial", sans-serif;
+   font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: @white;
+  }
+}
+.button-social {
+  width: 46px;
+  height: 48px;
+  margin-left: 6px;
+  background-color: @blue;
+}
+.social-link--twitter::after {
+  content: "";
+  background-image: url('../../img/icon/icon-twitter.svg');
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    display: block;
+    width: 18px;
+    height: 15px;
+    background-size: 18px 15px;
+    z-index: 1;
+}
+.social-link--facebook::after {
+  content: "";
+  background-image: url('../../img/icon/icon-facebook.svg');
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    display: block;
+    width: 9px;
+    height: 19px;
+    background-size: 9px 19px;
+    z-index: 1;
+}
+.social-link--youtube::after {
+  content: "";
+  background-image: url('../../img/icon/icon-youtube.svg');
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    display: block;
+    width: 20px;
+    height: 14px;
+    background-size: 20px 14px;
+    z-index: 1;
+}

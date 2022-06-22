@@ -8,66 +8,102 @@
 </head>
 
 <body class="page_body">
-    <div class="page-wrap">
-        <header class="page-header">
+    <header class="page-header">
 
-
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item">
-                        <a href="/">
-                    Главная
-                  </a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="catalog.html">
-                   Фото и видео
-                  </a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="/" class="page-header__logo">
-                            <img src="img/logotype-desktop.png" width="186" height="96" alt="City of Sedona">
-                        </a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="form.html">
-                    Форма отзыва
-                  </a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="https://htmlacademy.ru">
-                   Html Academy
-                  </a>
-                    </li>
-                </ul>
-
-            </nav>
-
-        </header>
-        <main class="page-main">
-
-        </main>
-        <footer class="page-footer">
-            <div class="page-footer__tag">
-                <h3>#visitSEDONA</h3>
-            </div>
-            <ul class="page-footer__social">
-                <li class="social__item">
-                    <a class="social-link social-link--twitter" href="https://twitter.com"></a>
+        <div class="page-header__logo">
+            <a href="index.html">
+                <img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Sedona">
+            </a>
+        </div>
+        <div class="page-header__menu">
+            <a href="index.html">
+                <img src="img/icon/icon-menu.svg" width="23" height="22" alt="Меню сайта">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="index.html">
+        Главная
+      </a>
                 </li>
-                <li class="social__item">
-                    <a class="social-link social-link--facebook" href="https://facebook.com"></a>
+                <li class="main-nav__item">
+                    <a href="catalog.html">Фото и видео</a>
                 </li>
-                <li class="social__item">
-                    <a class="social-link social-link--youtube" href="https://youtube.com"></a>
+                <li class="main-nav__item">
+                    <a>Форма отзыва</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="https://htmlacademy.ru">Html Academy</a>
                 </li>
             </ul>
-            <div class="page-footer__copyright">
-                <p>Разработано</p>
-                <img src="img/icon/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-            </div>
-        </footer>
-    </div>
+        </nav>
+        <div class="page-header__img">
+        </div>
+    </header>
+    <main class="page-main">
+        <h1 class="visually-hidden">Отзыв о поездке</h1>
+        <h2 class="visually-hidden">Форма отправки отзыва</h2>
+        <div class="main-header">
+            <h3>Оставьте свой отзыв</h3>
+            <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <section class="form-review">
+            <form id="feedback" action="https://echo.htmlacademy.ru" method="post">
+                <fieldset>
+                    <legend>Представьтесь:</legend>
+                    <p><label for="name">Имя<em>*</em>:</label><input type="text" id="name" placeholder="Петр"></p>
+                    <p><label for="surname">Фамилия<em>*</em>:</label><input type="text" id="surname" placeholder="Иванов"></p>
+                    <p><label for="subname">Отчество:</label><input type="text" id="subname" placeholder="Александрович"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Контактная информация:</legend>
+                    <p><label for="tel">Контактный телефон<em>*</em>:</label><input type="tel" id="tel" placeholder="Введите телефон"></p>
+                    <p><label for="email">Электронная почта<em>*</em>:</label><input type="email" id="email" placeholder="Введите e-mail"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Ваше общее впечатление:</legend>
+                    <p><input type="radio" id="good"><label for="good" checked>Скорее положительное</label></p>
+                    <p><input type="radio" id="bad"><label for="bad">Скорее отрицательное</label></p>
+                    <p><input type="radio" id="unknown"><label for="unknown">Затрудняюсь ответить</label></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Ваше общее впечатление:</legend>
+                    <p><input type="checkbox" id="most" checked><label for="most">Мост дьявола</label></p>
+                    <p><input type="checkbox" id="gora" checked><label for="gora">Гора Колокол</label></p>
+                    <p><input type="checkbox" id="park" checked><label for="park">Слайд парк</label></p>
+                    <p><input type="checkbox" id="skali"><label for="skali">Красные скалы</label></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Опишите свои эмоции:</legend>
+                    <p><textarea id="text" placeholder="Опишите подробно все свои восторги"></textarea></p>
+
+                </fieldset>
+                <p>
+                    <button form="feedback" class="button type=" submit ">Отправить отзыв</button></p>
+            </form>
+        </section>
+    </main>
+    <footer class="page-footer ">
+        <div class="page-footer__tag ">
+            <h3>#visitSEDONA</h3>
+        </div>
+        <ul class="page-footer__social ">
+            <li class="page-footer__social__item ">
+                <a class="social-link social-link--twitter " href="https://twitter.com "></a>
+            </li>
+            <li class="page-footer__social__item ">
+                <a class="social-link social-link--facebook " href="https://facebook.com "></a>
+            </li>
+            <li class="page-footer__social__item ">
+                <a class="social-link social-link--youtube " href="https://youtube.com "></a>
+            </li>
+        </ul>
+        <div class="page-footer__copyright ">
+            <p>Разработано</p>
+            <img src="img/icon/htmlacademy.svg " width="27 " height="34 " alt="HTML Academy ">
+        </div>
+    </footer>
 </body>
 
 </html>
