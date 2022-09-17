@@ -5,124 +5,192 @@
     <meta charset="utf-8">
     <title>HTML Academy: Sedona</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page_body">
-    <header class="page-header">
+    <div class="page-wrap">
+        <header class="page-header">
+            <section class="mobile-nav">
+                <ul class="mobile-nav__items">
+                    <li class="mobile-nav__item"><a href="#">Главная</a></li>
+                    <li class="mobile-nav__item"><a href="catalog.html">Фото и Видео</a></li>
+                    <li class="mobile-nav__item"><a href="form.html">Форма отзыва</a></li>
+                    <li class="mobile-nav__item"><a href="#">HtmlAcademy</a></li>
+                </ul>
+                <div class="mobile-nav--grad"></div>
+                <button class="page-header__btn"><img src="./img/icon/icon-cross.svg"></button>
+            </section>
+            <section class="top-nav">
 
-        <div class="page-header__logo">
-            <a href="index.html">
-                <img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Sedona">
-            </a>
-        </div>
-        <div class="page-header__menu">
-            <a href="index.html">
-                <img src="img/icon/icon-menu.svg" width="23" height="22" alt="Меню сайта">
-            </a>
-        </div>
-        <nav class="main-nav">
-            <ul class="main-nav__list">
-                <li class="main-nav__item">
-                    <a href="index.html">Главная</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="catalog.html">Фото и видео</a>
-                </li>
-                <li class="main-nav__item">
-                    <a>Форма отзыва</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="https://htmlacademy.ru">Html Academy</a>
-                </li>
-            </ul>
+                <div class="page-header__logo">
+                    <a>
+                        <img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Sedona">
+                    </a>
+                </div>
+                <button class="page-header__btn"><img src="./img/icon/icon-menu.svg"></button>
+            </section>
+            <section class="top-nav__desktop">
+                <div class="top-nav__left-menu">
+                    <div class="top-nav__item"><a href="#">Главная</a></div>
+                    <div class="top-nav__item"><a href="catalog.html">Фото и Видео</a></div>
+                </div>
+                <div class="page-header__logo">
+                    <a href="/">
+                        <img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Sedona">
+                    </a>
+                </div>
+                <div class="top-nav__right-menu">
+                    <div class="top-nav__item"><a href="form.html">Форма отзыва</a></div>
+                    <div class="top-nav__item"><a href="#">HtmlAcademy</a></div>
 
-        </nav>
-        <div class="page-header__img">
-
-        </div>
-    </header>
-    <main class="page-main">
-        <h1 class="visually-hidden">Каталог фотографий и видео</h1>
-        <h2 class="visually-hidden">Красивые фото и видео из поездки</h2>
-        <div class="main-header">
-            <h3>Фото и видео</h3>
-            <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        </div>
-        <section class="main-gallery">
-            <div class="main-gallery__item">
-                <div class="main-gallery__item__photo"><img src="img/photo-1-mobile.jpg" width="280" height="280" alt="неродные просторы"> </div>
-                <div class="main-gallery__item__header">неродные просторы</div>
-                <div class="main-gallery__item__autor">Автор фото: Борис</div>
-                <div class="main-gallery__item__liked">1350</div>
-
+                </div>
+            </section>
+            <div class="catalog-header__wrap">
+                <div class="catalog-header__img">
+                </div>
             </div>
-            <div class="main-gallery__item">
-                <div class="main-gallery__item__photo"><img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность"> </div>
-                <div class="main-gallery__item__header">Местная растительность</div>
-                <div class="main-gallery__item__autor">Автор фото: Сергей</div>
-                <div class="main-gallery__item__liked">143</div>
-
-            </div>
-            <div class="main-gallery__item">
-                <div class="main-gallery__item__photo"><img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север"> </div>
-                <div class="main-gallery__item__header">Дорога на север</div>
-                <div class="main-gallery__item__autor">Автор фото: Петр</div>
-                <div class="main-gallery__item__liked">96</div>
-
-            </div>
-            <div class="main-gallery__item">
-                <div class="main-gallery__item__photo"><img src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола"> </div>
-                <div class="main-gallery__item__header">Мост дьявола</div>
-                <div class="main-gallery__item__autor">Автор фото: Антон</div>
-                <div class="main-gallery__item__liked">254</div>
-
-            </div>
-        </section>
-        <div class="main-header">
-            <h3>Все еще сомневаетесь?</h3>
-            <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        </div>
-        <section class="main-video">
-            <div class="main-video__item">
-                <div class="main-video__item__photo"><img src="img/video-mobile.jpg" width="320" height="201" alt="Видеопрезентация"> </div>
-                <div class="main-video__item__control">
-                    <div class="item-control__up">
-                        <hr>
-                        <img src="img/icon/volume slider.svg" width="13" height="13" alt="ползунок проигрывателя">
+        </header>
+        <main class="page-main">
+            <div class="page-main__header">
+                <h1 class="visually-hidden">Каталог фотографий и видео</h1>
+                <h2 class="visually-hidden">Красивые фото и видео из поездки</h2>
+                <div class="page-main__wrap">
+                    <div class="main-header">
+                        <h3>Фото и видео</h3><br>
+                        <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
                     </div>
-                    <div class="item-control__down">
-                        <div class="item-control__down__left">
-                            <img src="img/icon/replay.svg" width="16" height="20" alt="Начать заново">
+                </div>
+                <div class="line"></div>
+            </div>
+            <section class="main-gallery">
+                <div class="page-main__wrap slide1">
+                    <div class="main-gallery__item">
+                        <div class="main-gallery__item__photo photo1"></div>
+                        <div class="main-gallery__item-desc">
+                            <div class="desc-left">
+                                <div class="main-gallery__item__header">неродные просторы</div>
+                                <div class="main-gallery__item__autor">Автор фото: Борис</div>
+                            </div>
+                            <div class="desc-right">
+                                <div class="main-gallery__item__liked">1350</div>
+                            </div>
                         </div>
-                        <div class="item-control__down__right">
-                            <img src="img/icon/subtitles.svg" width="32" height="20" alt="Субтитры">
-                            <img src="img/icon/fullscreen.svg" width="20" height="20" alt="На весь экран">
+
+
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="page-main__wrap slide2">
+                    <div class="main-gallery__item">
+                        <div class="main-gallery__item__photo photo2"></div>
+                        <div class="main-gallery__item-desc">
+                            <div class="desc-left">
+                                <div class="main-gallery__item__header">Местная растительность</div>
+                                <div class="main-gallery__item__autor">Автор фото: Сергей</div>
+                            </div>
+                            <div class="desc-right">
+                                <div class="main-gallery__item__liked">143</div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="line"></div>
+                <div class="page-main__wrap slide3">
+                    <div class="main-gallery__item">
+                        <div class="main-gallery__item__photo photo3"></div>
+                        <div class="main-gallery__item-desc">
+                            <div class="desc-left">
+                                <div class="main-gallery__item__header">Дорога на север</div>
+                                <div class="main-gallery__item__autor">Автор фото: Петр</div>
+                            </div>
+                            <div class="desc-right">
+                                <div class="main-gallery__item__liked">96</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="page-main__wrap slide4">
+                    <div class="main-gallery__item">
+                        <div class="main-gallery__item__photo photo4"></div>
+                        <div class="main-gallery__item-desc">
+                            <div class="desc-left">
+                                <div class="main-gallery__item__header">Мост дьявола</div>
+                                <div class="main-gallery__item__autor">Автор фото: Антон</div>
+                            </div>
+                            <div class="desc-right">
+                                <div class="main-gallery__item__liked">254</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </section>
+            <div class="main-header">
+                <div class="page-main__wrap">
+                    <h3>Все еще сомневаетесь?</h3><br>
+                    <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+                </div>
             </div>
-        </section>
-    </main>
-    <footer class="page-footer ">
-        <div class="page-footer__tag ">
-            <h3>#visitSEDONA</h3>
+            <section class="main-video">
+                <div class="main-video__item">
+                    <div class="main-video__item__photo"></div>
+                    <div class="page-main__wrap">
+                        <div class="main-video__item__control">
+                            <div class="item-control__up">
+                                <hr>
+                                <img src="img/icon/volume slider.svg" width="13" height="13" alt="ползунок проигрывателя">
+
+                            </div>
+                            <div class="item-control__down">
+                                <div class="item-control__down__left">
+                                    <div class="item-control__down-left--replay">
+                                    </div>
+                                </div>
+                                <div class="item-control__down__right">
+                                    <div class="item-control__down-right--subtitles">
+                                    </div>
+                                    <div class="item-control__down-right--fullscreen">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-video__item__control-desktop">
+                            <div class="control-manage">
+                                <div class="control-manage--replay"></div>
+                                <div class="control-manage--scale"></div>
+                                <div class="control-manage--slider"></div>
+                                <div class="control-manage--subtitles"></div>
+                                <div class="control-manage--fullscreen"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer ">
+            <div class="page-footer__tag ">
+                <h3>#visitSEDONA</h3>
+            </div>
+            <ul class="page-footer__social ">
+                <li class="page-footer__social__item button-social ">
+                    <a class="social-link social-link--twitter " href="https://twitter.com "></a>
+                </li>
+                <li class="page-footer__social__item button-social ">
+                    <a class="social-link social-link--facebook " href="https://facebook.com "></a>
+                </li>
+                <li class="page-footer__social__item button-social ">
+                    <a class="social-link social-link--youtube " href="https://youtube.com "></a>
+                </li>
+            </ul>
+            <div class="page-footer__copyright ">
+                <p>Разработано</p>
+                <a href="https://htmlacademy.ru">
+                    <div class="page-footer__icon"></div>
+                </a>
+        </footer>
         </div>
-        <ul class="page-footer__social ">
-            <li class="page-footer__social__item ">
-                <a class="social-link social-link--twitter " href="https://twitter.com "></a>
-            </li>
-            <li class="page-footer__social__item ">
-                <a class="social-link social-link--facebook " href="https://facebook.com "></a>
-            </li>
-            <li class="page-footer__social__item ">
-                <a class="social-link social-link--youtube " href="https://youtube.com "></a>
-            </li>
-        </ul>
-        <div class="page-footer__copyright ">
-            <p>Разработано</p>
-            <img src="img/icon/htmlacademy.svg " width="27 " height="34 " alt="HTML Academy ">
-        </div>
-    </footer>
 </body>
 
 </html>

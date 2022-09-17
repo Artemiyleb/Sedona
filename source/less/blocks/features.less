@@ -1,0 +1,341 @@
+.features-visual__text {
+  color: @white;
+  background-color: @blue;
+  text-align: center;
+  h3 {
+    color: @white;
+  }
+}
+
+.features-icon__list {
+  position: relative;
+  padding: 10px 20px 35px 69px;
+}
+
+.features-icon__item {
+  h3 {
+    margin-top: 25px;
+  }
+}
+
+.features-icon__item--house::before {
+  content: "";
+  background-image: url("../../img/icon/icon-house.svg");
+  position: absolute;
+  left: 21px;
+  top: 26px;
+  display: block;
+  width: 39px;
+  height: 37px;
+  background-size: 39px 37px;
+}
+
+.features-icon__item--gift::before {
+  content: "";
+  background-image: url("../../img/icon/icon-gift.svg");
+  position: absolute;
+  left: 25px;
+  top: 155px;
+  display: block;
+  width: 32px;
+  height: 38px;
+  background-size: 32px 38px;
+}
+
+.features-icon__item--burger::before {
+  content: "";
+  background-image: url("../../img/icon/icon-burger.svg");
+  position: absolute;
+  left: 18px;
+  top: 271px;
+  display: block;
+  width: 40px;
+  height: 35px;
+  background-size: 40px 35px;
+}
+
+.features-icon__item--burger p {
+  margin-bottom: 0;
+}
+
+.features-text__list {
+  position: relative;
+  padding: 0 35px 2px 35px;
+  background-color: @grey;
+
+
+}
+
+@media (min-width: @tablet-width)
+{
+  .features-visual {
+    display: flex;
+    width: 100%;
+    height: 256px;
+     }
+     .features-visual__img {
+      width: 512px;
+      height: 256px;
+      background-image: url(../../img/photo-city-tablet.jpg);
+    }
+    .features-visual__text {
+      width: 256px;
+      padding: 40px 32px 43px;
+      h3 {
+        display: block;
+        width: 150px;
+        margin: 0 auto;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1.24;
+      }
+      p {
+        display: block;
+        width: 192px;
+        margin: 15px auto 30px;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+    .reverse {
+      flex-direction: row-reverse;
+        .features-visual__img {
+          width: 512px;
+          height: 256px;
+          background-image: url(../../img/photo-bridge-tablet.jpg);
+        }
+         }
+         .features-icon__item--gift {
+          order: 2;
+         }
+    .features-icon__list {
+      padding: 158px 31px 59px 36px;
+          display: flex;
+          justify-content: space-between;
+
+      .features-icon__item {
+        display: flex;
+        flex-direction: column;
+        width: 190px;
+         h3 {
+          margin: 0;
+          text-align: center;
+          font-size: 21px;
+          line-height: 1.24;
+            }
+         p {
+          margin: 0;
+          margin-top: 24px;
+          font-size: 14px;
+          line-height: 1.5;
+          text-align: center;
+           }
+      }
+         }
+         .features-icon__item--house::before {
+          content: "";
+          background-image: url("../../img/icon/icon-house.svg");
+          position: absolute;
+          left: 94px;
+          top: 60px;
+          display: block;
+          width: 75px;
+          height: 72px;
+          background-size: 75px 72px;
+        }
+        .features-icon__item--gift::before {
+          content: "";
+          background-image: url("../../img/icon/icon-gift.svg");
+          position: absolute;
+          left: 610px;
+          top: 57px;
+          display: block;
+          width: 64px;
+          height: 75px;
+          background-size: 64px 75px;
+        }
+
+        .features-icon__item--burger::before {
+          content: "";
+          background-image: url("../../img/icon/icon-burger.svg");
+          position: absolute;
+          left: 349px;
+          top: 63px;
+          display: block;
+          width: 76px;
+          height: 68px;
+          background-size: 76px 68px;
+        }
+
+        .features-text__list {
+          display: flex;
+          justify-content: space-between;
+          .features-text__item {
+            width: 256px;
+            padding: 40px;
+            h3 {
+              text-align: center;
+              padding: 0;
+              font-size: 21px;
+              line-height: 1.24;
+            }
+            p {
+              text-align: center;
+              margin: 0;
+              margin-top: 21px;
+              font-size: 14px;
+              line-height: 1.86;
+            }
+          }
+        }
+}
+
+@media (min-width: @desktop-width)
+{
+  .features-visual__text {
+    width: 400px;
+    padding: 47px 52px 56px 53px;
+    h3 {
+      display: block;
+      width: 150px;
+      margin: 0 auto;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 1.24;
+    }
+    p {
+      display: block;
+      width: 280px;
+      margin: 15px auto 30px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+.features-visual__img {
+  width: 800px;
+  height: 256px;
+  background-image: url(../../img/photo-city-desktop.jpg);
+}
+.reverse {
+      .features-visual__img {
+      width: 800px;
+      height: 256px;
+      background-image: url(../../img/photo-bridge-desktop.jpg);
+    }
+     }
+     .features-icon__list {
+      padding: 158px 78px 81px 58px;
+          display: flex;
+          justify-content: space-between;
+
+      .features-icon__item {
+        display: flex;
+        flex-direction: column;
+        width: 282px;
+      }
+      .features-icon__item:nth-child(even) {
+        width: 244px;
+      }
+         }
+   .features-icon__item--house::before {
+          content: "";
+          background-image: url("../../img/icon/icon-house.svg");
+          position: absolute;
+          left: 163px;
+          top: 59px;
+          display: block;
+          width: 75px;
+          height: 72px;
+          background-size: 75px 72px;
+        }
+        .features-icon__item--gift::before {
+          content: "";
+          background-image: url("../../img/icon/icon-gift.svg");
+          position: absolute;
+          left: 969px;
+          top: 57px;
+          display: block;
+          width: 63px;
+          height: 75px;
+          background-size: 63px 75px;
+        }
+
+        .features-icon__item--burger::before {
+          content: "";
+          background-image: url("../../img/icon/icon-burger.svg");
+          position: absolute;
+          left: 571px;
+          top: 63px;
+          display: block;
+          width: 76px;
+          height: 69px;
+          background-size: 76px 69px;
+        }
+        .features-text__item {
+          width: 400px;
+          padding: 42px;
+        }
+}
+
+@media (max-width: @mobile-width-only)
+{
+  .features-visual__img {
+    width: 100%;
+    height: 260px;
+    background-image: url(../../img/photo-city-mobile.jpg);
+    margin: 0;
+}
+
+.features-visual__text {
+  width: 100%;
+  padding-top: 42px;
+  padding-bottom: 39px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.44;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .reverse {
+    .features-visual__img {
+    width: 100%;
+    height: 260px;
+    background-image: url(../../img/photo-bridge-mobile.jpg);
+  }
+   }
+   .features-text__item {
+    p:nth-child(odd) {
+      margin-bottom: 25px;
+    }
+
+    h3 {
+    padding-top: 25px;
+    }
+    text-align: center;
+  }
+  .features-text__item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 167px;
+    left: 20px;
+    width: 280px;
+    height: 1px;
+    background: @line-gray;
+  }
+
+  .features-text__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 167px;
+    left: 20px;
+    width: 280px;
+    height: 1px;
+    background: @line-gray;
+  }
+}

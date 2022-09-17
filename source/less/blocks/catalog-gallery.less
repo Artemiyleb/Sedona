@@ -1,0 +1,116 @@
+@media (max-width: @mobile-width-only) {
+
+    h3 {
+      font-size: 18px;
+      line-height: 1.44;
+      font-weight: bold;
+      text-align: center;
+    }
+
+  .page-main__header {
+    margin-top: 31px;
+       }
+       .main-header {
+        margin-bottom: 20px;
+       }
+  }
+
+@media (min-width: @tablet-width) {
+.main-header {
+  width: 430px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 52px;
+}
+h3 {
+  font-size: 30px;
+  line-height: 0.86;
+  font-weight: bold;
+  text-align: center;
+}
+
+.line {
+  display: none;
+}
+
+.main-gallery {
+  padding: 0 60px 47px;
+  display: grid;
+  gap: 0px 0px;
+  grid-template-areas:
+    "slide1 slide1"
+    "slide2 slide3"
+    "slide4 .";
+}
+
+.slide1 { grid-area: slide1;}
+.slide2 { grid-area: slide2;}
+.slide3 { grid-area: slide3; }
+.slide4 { grid-area: slide4; }
+
+.page-main__wrap {
+  margin: 0;
+  padding: 0;
+}
+
+.photo1 {
+  width: 648px;
+  height: 400px;
+  background-image: url(../../img/Catalog-img/photo/photo-1-tablet.jpg);
+  background-repeat: no-repeat;
+}
+.photo2 {
+  width: 324px;
+  height: 267px;
+  background-image: url(../../img/Catalog-img/photo/photo-2-tablet.jpg);
+  background-repeat: no-repeat;
+}
+.photo3 {
+  width: 324px;
+  height: 267px;
+  background-image: url(../../img/Catalog-img/photo/photo-3-tablet.jpg);
+  background-repeat: no-repeat;
+}
+.photo4 {
+  width: 324px;
+  height: 267px;
+  background-image: url(../../img/Catalog-img/photo/photo-4-tablet.jpg);
+  background-repeat: no-repeat;
+}
+}
+
+@media (min-width: @desktop-width) {
+  .main-gallery {
+    padding: 0 0 63px 0;
+    display: grid;
+    gap: 0px 0px;
+    grid-template-areas:
+      "slide1 slide1 slide1"
+      "slide2 slide3 slide4";
+        }
+
+  .photo1 {
+    position: relative;    width: 1200px;
+    height: 400px;
+    background-image: url(../../img/Catalog-img/photo/photo-1-desktop.jpg);
+    background-repeat: no-repeat;
+  }
+  .photo2 {
+    width: 400px;
+    height: 267px;
+    background-image: url(../../img/Catalog-img/photo/photo-2-desktop.jpg);
+    background-repeat: no-repeat;
+  }
+  .photo3 {
+    width: 400px;
+    height: 267px;
+    background-image: url(../../img/Catalog-img/photo/photo-3-desktop.jpg);
+    background-repeat: no-repeat;
+  }
+  .photo4 {
+    width: 400px;
+    height: 267px;
+    background-image: url(../../img/Catalog-img/photo/photo-4-desktop.jpg);
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,284 @@
+.page-header__wrap--mini {
+  position: relative;
+  width: 320px;
+  height: 131px;
+  }
+
+.page-main__form {
+
+ text-align: center;
+ align-items: center;
+}
+
+.main-header__form {
+  margin-top: 34px;
+}
+
+.main-header__form h3 {
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 700;
+  color: #000;
+}
+
+.main-header__form p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 700;
+  color: #000;
+  }
+
+label {
+  font-size: 14px;
+  line-height: 1.86;
+  color: #333333;
+}
+
+// Contact
+
+.feedback__name,
+.feedback__contact {
+    padding: 0;
+  margin: 0;
+  width: 280px;
+}
+
+.feedback__name input {
+  display: block;
+  width: 100%;
+  margin-left: 15px;
+  padding-left: 22px;
+  padding-right: 10px;
+  height: 58px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.feedback__name p {
+  display: flex;
+  align-items:center;
+  flex-wrap: nowrap;
+  max-width: 280px;
+ }
+
+.feedback__name input::placeholder,
+.feedback__contact input::placeholder {
+  color: #000;
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.feedback__contact p {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__contact input {
+  display: block;
+  width: 100%;
+ padding: 0 10px 0 22px;
+  height: 58px;
+  background-color: #f2f2f2;
+  border: none;
+  }
+
+.feedback__contact--input {
+  display: flex;
+  align-items: stretch;
+}
+
+.feedback__contact--input-right {
+position: relative;
+width: 58px;
+height: 58px;
+background-color: #E6E6E6;
+}
+
+.feedback__contact--input-right img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  z-index: 1;
+  margin: auto;
+  top: 0; right: 0; bottom: 0; left: 0;
+  }
+
+ // impression
+
+  .feedback__impression {
+margin-top: 20px;
+   padding: 0;
+  }
+
+.feedback__impression legend {
+  margin-bottom: 37px;
+}
+
+.impression__radio {
+  display: flex;
+  align-items:center;
+  margin-bottom: 43px;
+  float: left;
+  padding-left: 78px;
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 700;
+  color: #000;
+  text-transform: none;
+  }
+
+  .impression__radio-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  .impression__radio-box {
+    position: absolute;
+    margin-left: -78px ;
+      width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+  }
+
+  // Place
+
+  .feedback__place {
+    margin: 15px 0 -15px 0;
+ padding: 0;
+}
+
+.feedback__place legend {
+  margin-bottom: 36px;
+}
+
+.place__check {
+  display: flex;
+  align-items:center;
+  margin-bottom: 54px;
+  padding-left: 78px;
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 700;
+  color: #000;
+  text-transform: none;
+  }
+
+  .place__check-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  .place__check-box {
+    position: absolute;
+    margin-left: -78px ;
+      width: 46px;
+    height: 46px;
+     background-color: #F2F2F2;
+  }
+
+// Feedback Emotion
+
+.feedback__emotion textarea {
+width: 236px;
+  height: 118px;
+  padding: 13px 22px 30px 22px;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 700;
+  color: #000;
+  text-transform: none;
+  resize: none;
+}
+
+.feedback__emotion textarea::placeholder {
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 700;
+  color: #000;
+  text-transform: none;
+}
+
+// Feedback Button
+
+.feedback__button {
+width: 280px;
+height: 58px;
+  margin-top: 33px;
+  border: none;
+  font-size: 21px;
+  line-height: 1.24;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+//checked
+
+.impression__radio-input:checked + .impression__radio-box {
+  background-image: url(../../img/icon/round.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.place__check-input:checked + .place__check-box {
+  background-image: url(../../img/icon/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+//hover
+
+input:hover,
+textarea:hover {
+background-color: #E5E5E5;
+}
+
+.impression__radio-input:hover + .impression__radio-box {
+  background-color: #e5e5e5;
+}
+
+.place__check-input:hover + .place__check-box {
+  background-color: #e5e5e5;
+}
+
+.feedback__button:hover {
+  background-color: #669EC0;
+}
+
+// Active
+
+.feedback__button:active {
+  background-color: #5496BD;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+// focus
+
+input:focus,
+textarea:focus {
+  background-color: #fff;
+  outline: 4px solid #e5e5e5;
+  outline-offset: -4px;
+}
